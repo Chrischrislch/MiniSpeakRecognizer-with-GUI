@@ -8,3 +8,7 @@ Run the program by:
 ```
 python3 mini.py
 ```
+You can configure the language by changing the statement:
+```txt = r.recognize_google(audio, language="en-US"```
+
+https://cloud.google.com/speech-to-text/docs/languages
