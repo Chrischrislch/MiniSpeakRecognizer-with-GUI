@@ -15,9 +15,7 @@ def rec():
     while True:
         with sr.Microphone() as source: 
             r.adjust_for_ambient_noise(source)
-            #Output.insert(END,"Recording for 10 seconds\n")
             audio = r.listen(source,timeout=5)
-            #Output.insert(END,"Done recording\n")
         try:
             txt = r.recognize_google(audio, language="en-US")
             msg.configure(text=txt)
