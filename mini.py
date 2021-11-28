@@ -11,6 +11,7 @@ obj.resizable(0,0)
 
 def rec():
     r = sr.Recognizer()
+    Output.delete("1.0","end")
     #msg.configure(text="Say something")
     while True:
         with sr.Microphone() as source: 
